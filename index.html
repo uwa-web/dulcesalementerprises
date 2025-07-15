@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dulce Salem Enterprises- Taste. Style. Essentials.</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="dulcesalem.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <div class="nav-container">
+                <a href="#" class="logo">Dulce Salem Enterprises</a>
+                <nav class="nav-menu">
+                    <a href="#home">Home</a>
+                    <a href="#shop">Shop</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#blog">Blog</a>
+                </nav>
+                <div class="nav-icons">
+                    <a href="#" id="search-btn"><i class="fas fa-search"></i></a>
+                    <a href="#" id="wishlist-btn"><i class="fas fa-heart"></i></a>
+                    <a href="#" id="cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                    <a href="#" id="account-btn"><i class="fas fa-user"></i></a>
+                </div>
+                <div class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text fade-in-up">
+                    <h1>Dulce Salem Enterprises</h1>
+                    <p>Taste. Style. Essentials.</p>
+                    <p>Explore handmade bags, homemade snacks, and imported everyday essentials.</p>
+                    <div class="hero-buttons">
+                        <a href="#shop" class="btn btn-primary">Start Shopping</a>
+                        <a href="#categories" class="btn btn-secondary">Browse Collections</a>
+                    </div>
+                </div>
+               <div class="hero-images fade-in-up">
+  <div class="hero-image">
+    <img src="IMG/woman-holding-chin-chin.jpg" alt="Woman holding chinchin" style="width: 100%; height: auto; display: block;">
+  </div>
+  <div class="hero-image">
+    <img src="IMG/woman-with-beaded-bag.jpg" alt="Woman with Handmade Bag" style="width: 100%; height: auto; display: block;">
+  </div>
+</div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories" id="categories">
+        <div class="container">
+            <h2 class="section-title">Our Collections</h2>
+            <div class="category-grid">
+                <div class="category-card" data-category="bags">
+                    <div class="category-icon">👜</div>
+                    <h3>Handmade Bags</h3>
+                    <p>Beautifully crafted beaded and leather bags, each piece unique and made with love.</p>
+                    <a href="#" class="btn btn-secondary">Shop Bags</a>
+                </div>
+                <div class="category-card" data-category="snacks">
+                    <div class="category-icon">🍪</div>
+                    <h3>Snacks & Treats</h3>
+                    <p>Homemade chinchin, peanuts, coconut chips, and other delicious Nigerian treats.</p>
+                    <a href="#" class="btn btn-secondary">Shop Snacks</a>
+                </div>
+                <div class="category-card" data-category="imports">
+                    <div class="category-icon">🌍</div>
+                    <h3>General Imports</h3>
+                    <p>Carefully selected household items, fashion accessories, tech gadgets, and lifestyle products.</p>
+                    <a href="#" class="btn btn-secondary">Shop Imports</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trending Products -->
+    <section class="products" id="shop">
+        <div class="container">
+            <h2 class="section-title">Trending Products</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">
+    <img src="IMG/beaded-evening-bag.jpg" alt="Beaded Evening Bag - Gold" style="width: 100%; height: auto; display: block;">
+</div>
+                    <div class="product-info">
+                        <h4>Beaded Evening Bag</h4>
+                        <div class="product-price">₦25,000</div>
+                        <div class="product-actions">
+                            <button class="btn btn-small btn-cart" onclick="addToCart('beaded-bag-gold', 'Beaded Evening Bag - Gold', 25000)">Add to Cart</button>
+                            <button class="btn btn-small btn-wishlist" onclick="addToWishlist('beaded-bag-gold')">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                     <div class="product-image">
+    <img src="IMG/chin-chin.jpg" alt="wireless-bluetooth-speaker" style="width: 100%; height: auto; display: block;">
+</div>
+                    <div class="product-info">
+                        <h4>Coconut Chinchin - Large Pack</h4>
+                        <div class="product-price">₦3,500</div>
+                        <div class="product-actions">
+                            <button class="btn btn-small btn-cart" onclick="addToCart('coconut-chinchin', 'Coconut Chinchin - Large Pack', 3500)">Add to Cart</button>
+                            <button class="btn btn-small btn-wishlist" onclick="addToWishlist('coconut-chinchin')">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+    <img src="IMG/bluetooth-speaker.jpg" alt="wireless-bluetooth-speaker" style="width: 100%; height: auto; display: block;">
+</div>
+                    <div class="product-info">
+                        <h4>Wireless Bluetooth Speaker</h4>
+                        <div class="product-price">₦12,000</div>
+                        <div class="product-actions">
+                            <button class="btn btn-small btn-cart" onclick="addToCart('bluetooth-speaker', 'Wireless Bluetooth Speaker', 12000)">Add to Cart</button>
+                            <button class="btn btn-small btn-wishlist" onclick="addToWishlist('bluetooth-speaker')">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                     <div class="product-image">
+    <img src="IMG/aluminum-alloy-laptop-stand.jpg" alt="Aluminum Alloy Laptop Stand" style="width: 100%; height: auto; display: block;">
+</div>
+                    <div class="product-info">
+                        <h4>Aluminum Alloy Laptop Stand</h4>
+                        <div class="product-price">₦4,550</div>
+                        <div class="product-actions">
+                            <button class="btn btn-small btn-cart" onclick="addToCart('leather-crossbody', 'Leather Crossbody Bag', 18000)">Add to Cart</button>
+                            <button class="btn btn-small btn-wishlist" onclick="addToWishlist('leather-crossbody')">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                     <div class="product-image">
+    <img src="IMG/aesthetic-table-standing-mirror.jpg" alt="Aesthetic Table Standing Mirror" style="width: 100%; height: auto; display: block;">
+</div>
+                    <div class="product-info">
+                        <h4>Aesthetic Table Standing Mirror</h4>
+                        <div class="product-price">₦1,550</div>
+                        <div class="product-actions">
+                            <button class="btn btn-small btn-cart" onclick="addToCart('spiced-peanuts', 'Spiced Peanuts - Family Size', 2800)">Add to Cart</button>
+                            <button class="btn btn-small btn-wishlist" onclick="addToWishlist('spiced-peanuts')">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                     <div class="product-image">
+    <img src="IMG/adjustable-laptop-table.jpg" alt="adjustable-laptop-table" style="width: 100%; height: auto; display: block;">
+</div>
+                    <div class="product-info">
+                        <h4>Adjustable Laptop Table</h4>
+                        <div class="product-price">₦4,500</div>
+                        <div class="product-actions">
+                            <button class="btn btn-small btn-cart" onclick="addToCart('phone-stand', 'Adjustable Phone Stand', 4500)">Add to Cart</button>
+                            <button class="btn btn-small btn-wishlist" onclick="addToWishlist('phone-stand')">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dulce's Story -->
+    <section class="story" id="about">
+        <div class="container">
+            <div class="story-content">
+                <div class="story-text fade-in-up">
+                    <h2>Meet Susan</h2>
+                    <p>What started as a university side hustle has blossomed into a full-fledged business built on passion, quality, and authenticity. Dulce's journey began with a simple love for creating beautiful handmade items and sharing delicious homemade treats with friends.</p>
+                    <p>From beading intricate bags late into the night to perfecting her chinchin recipe, every product tells a story of dedication and craftsmanship. When she expanded into carefully curated imports, it was with the same commitment to quality that has always defined her brand.</p>
+                    <p>Today, Dulce Salem Enterprises represents more than just products – it's a celebration of African creativity, entrepreneurship, and the belief that beautiful, quality items should be accessible to everyone.</p>
+                    <a href="#shop" class="btn btn-primary">Start Shopping</a>
+                </div>
+               <div class="story-image">
+  <img src="IMG/meet-susan.jpg" alt="Susan at work">
+</div>
+    </section>
+
+    <!-- Customer Reviews -->
+    <section class="reviews">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <div class="review-slider">
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">A</div>
+                        <div class="review-info">
+                            <h5>Adunni Okafor</h5>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p>"The beaded bags are absolutely stunning! The quality is exceptional and I always get compliments when I carry them. Dulce's attention to detail is amazing."</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">K</div>
+                        <div class="review-info">
+                            <h5>Kemi Adebayo</h5>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p>"I'm addicted to the chinchin! It's perfectly crispy and the coconut flavor is incredible. I order in bulk for my office and everyone loves it."</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">T</div>
+                        <div class="review-info">
+                            <h5>Tolu Mensah</h5>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p>"The imported items are carefully selected and good quality. I've bought several tech accessories and household items - all exceeded my expectations."</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">F</div>
+                        <div class="review-info">
+                            <h5>Funmi Lagos</h5>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p>"Fast delivery, great packaging, and excellent customer service. Dulce really cares about her customers and it shows in every interaction."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Build Your Combo Box</h2>
+            <p>Mix your own Dulce combo — bag + snacks + imports for the perfect gift or treat yourself!</p>
+            <a href="#" class="btn btn-cta">
+                <span>Create Your Combo</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Dulce Salem Enterprises</h4>
+                    <p>Your one-stop shop for handmade bags, homemade snacks, and imported essentials. Quality, authenticity, and creativity in every product.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#shop">Shop</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="#">Handmade Bags</a></li>
+                        <li><a href="#">Snacks & Treats</a></li>
+                        <li><a href="#">General Imports</a></li>
+                        <li><a href="#">Combo Boxes</a></li>
+                        <li><a href="#">New Arrivals</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Track Your Order</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Dulce Salem. All rights reserved. Made with ❤ in Nigeria.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/2347000000000" class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Shopping Cart Overlay -->
+    <div class="cart-overlay" id="cart-overlay">
+        <div class="cart-header">
+            <h3>Shopping Cart</h3>
+            <button class="close-cart" onclick="closeCart()">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- Cart items will be populated here -->
+        </div>
+        <div class="cart-total">
+            <h3>Total: ₦<span id="cart-total">0</span></h3>
+            <button class="checkout-btn" onclick="checkout()">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <!-- Newsletter Popup -->
+    <div class="newsletter-popup" id="newsletter-popup">
+        <div class="newsletter-content">
+            <button class="close-newsletter" onclick="closeNewsletter()">×</button>
+            <h3>Stay in the Loop!</h3>
+            <p>Get exclusive access to new products, special offers, and Dulce's latest creations.</p>
+            <form class="newsletter-form" onsubmit="subscribeNewsletter(event)">
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit">Subscribe Now</button>
+            </form>
+        </div>
+    </div>
+    <script src="dulcesalem.js"></script>
+</body>
+</html>
+    
